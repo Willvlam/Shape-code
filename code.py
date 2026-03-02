@@ -2,7 +2,7 @@ import math
 
 choice = input('Angles(1), Percent(2), or Quadratic(3): ')
 
-# --- QUADRATIC SOLVER ---
+# --- QUADRATIC SOLVER --- 
 if choice == '3':
     while True:
         print("-" * 20)
