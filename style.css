@@ -1,0 +1,64 @@
+body {
+    background-color: #1c1c1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: -apple-system, sans-serif;
+}
+
+.calculator {
+    background-color: #000;
+    width: 320px;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.speed-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.speed-btn {
+    background-color: #5e5ce6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.display {
+    color: white;
+    font-size: 60px;
+    text-align: right;
+    padding: 20px 10px;
+    min-height: 70px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.num { background-color: #333; color: white; }
+.op { background-color: #ff9f0a; color: white; }
+.func { background-color: #a5a5a5; color: black; }
+.zero { grid-column: span 2; width: 152px; border-radius: 40px; text-align: left; padding-left: 25px; }

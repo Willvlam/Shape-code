@@ -60,4 +60,3 @@ elif choice == '1':
         answer = ((sides - 2) * 180 / sides) if type_ang == '1' else (360 / sides)
         print(f"\n>>> RESULT: {round(answer, 2)}")
         if input('\nNext? (y/n): ').lower() == 'n': break
-        
