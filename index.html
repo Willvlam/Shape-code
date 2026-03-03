@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrated 2 Speedrun Calc</title>
+    <title>Integrated 2 Scientific</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,8 +20,8 @@
 
     <div class="grid">
         <button class="func" onclick="jsReset()">AC</button>
-        <button class="func">+/-</button>
-        <button class="func">%</button>
+        <button class="func" onclick="jsToggle()">+/-</button>
+        <button class="func" onclick="jsMath('sin')">sin</button>
         <button class="op" onclick="jsOp('/')">÷</button>
 
         <button class="num" onclick="jsNum(7)">7</button>
@@ -39,8 +39,9 @@
         <button class="num" onclick="jsNum(3)">3</button>
         <button class="op" onclick="jsOp('+')">+</button>
 
-        <button class="num zero" onclick="jsNum(0)">0</button>
-        <button class="num" onclick="jsNum('.')">.</button>
+        <button class="num" onclick="jsMath('cos')">cos</button>
+        <button class="num" onclick="jsNum(0)">0</button>
+        <button class="num" onclick="jsMath('tan')">tan</button>
         <button class="op" onclick="jsEqual()">=</button>
     </div>
 </div>

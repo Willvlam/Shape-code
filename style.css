@@ -10,37 +10,37 @@ body {
 
 .calculator {
     background-color: #000;
-    width: 320px;
-    padding: 20px;
+    width: 340px;
+    padding: 25px 15px;
     border-radius: 40px;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8);
 }
 
 .speed-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .speed-btn {
     background-color: #5e5ce6;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 10px 0;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
     cursor: pointer;
 }
 
 .display {
     color: white;
-    font-size: 60px;
+    font-size: 55px;
     text-align: right;
-    padding: 20px 10px;
-    min-height: 70px;
+    padding: 30px 10px;
+    min-height: 60px;
+    font-weight: 300;
 }
 
 .grid {
@@ -54,11 +54,13 @@ button {
     width: 70px;
     border-radius: 50%;
     border: none;
-    font-size: 30px;
+    font-size: 24px;
     cursor: pointer;
+    transition: 0.1s;
 }
+
+button:active { filter: brightness(1.5); }
 
 .num { background-color: #333; color: white; }
 .op { background-color: #ff9f0a; color: white; }
-.func { background-color: #a5a5a5; color: black; }
-.zero { grid-column: span 2; width: 152px; border-radius: 40px; text-align: left; padding-left: 25px; }
+.func { background-color: #a5a5a5; color: black; font-size: 20px; }
