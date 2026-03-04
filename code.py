@@ -1,6 +1,6 @@
 import math
-
-choice = input('Angles(1), Percent(2), or Quadratic(3): ')
+pi = float(3.14)
+choice = input('Angles(1), Percent(2), Quadratic(3), or pythagorean theorum (4) : ')
 
 # --- QUADRATIC SOLVER --- 
 if choice == '3':
@@ -59,4 +59,20 @@ elif choice == '1':
         sides = int(input("Sides/Angles: "))
         answer = ((sides - 2) * 180 / sides) if type_ang == '1' else (360 / sides)
         print(f"\n>>> RESULT: {round(answer, 2)}")
-        if input('\nNext? (y/n): ').lower() == 'n': break
+        if input('\nNext? (y/n): ').lower() == 'n': 
+            break
+elif choice == '4': 
+    while True:
+        abac = float(input('do you have a and b (1) or a and c (2) '))
+        if abac == '1':
+            a_side = float(input('what is a '))
+            b_side = float(input('what is b '))
+            answer = ((a_side ** 2 + b_side ** 2)/2 )
+            print(answer)
+        elif abac == '2':
+            a_side = float(input('what is a '))
+            c_side = float(input('what is c '))
+            answer = ((c_side ** 2 - a_side ** 2)/2 )
+            print(answer)
+        if input('\nNext? (y/n): ').lower() == 'n': 
+            break
